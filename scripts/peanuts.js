@@ -170,11 +170,36 @@
 let bills = [125,555,44]
 let tips = []
 let totals =[]
+let grandTotal = 0
 
-
-calcTip = () => {
+calcTip = (arr) => {
+//arr for each - calculate tip.push to tips
+ return arr.forEach(el => {
+    (el >= 50 && el <= 300 ? tipAmount=0.15*el : tipAmount=0.2*el)
+    //console.log(tipAmount)
+    tips.push(tipAmount)
+    totals.push(tipAmount + el)
+    //console.log(tips)
+})
 
 }
+
+calcGrandTotal = (arr) => {
+     arr.reduce((total,number) => {
+        return grandTotal = total + number 
+    },0)
+}
+
+calcTip(bills)
+
+calcGrandTotal(totals)
+
+console.log(bills)
+console.log(tips)
+console.log(totals)
+console.log(grandTotal)
+
+
 
 
 reset = () => {
