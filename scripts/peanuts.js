@@ -167,41 +167,63 @@
 // create and array of those tip values
 // create an array of total tip + bills 
 
-let bills = [125,555,44]
-let tips = []
-let totals =[]
-let grandTotal = 0
+// let bills = [125,555,44]
+// let tips = []
+// let totals =[]
+// let grandTotal = 0
+
+// calcTip = (arr) => {
+// //arr for each - calculate tip.push to tips
+//  return arr.forEach(el => {
+//     (el >= 50 && el <= 300 ? tipAmount=0.15*el : tipAmount=0.2*el)
+//     //console.log(tipAmount)
+//     tips.push(tipAmount)
+//     totals.push(tipAmount + el)
+//     //console.log(tips)
+// })
+
+// }
+
+// calcGrandTotal = (arr) => {
+//      arr.reduce((total,number) => {
+//         return grandTotal = total + number 
+//     },0)
+// }
+
+// calcTip(bills)
+
+// calcGrandTotal(totals)
+
+// console.log(bills)
+// console.log(tips)
+// console.log(totals)
+// console.log(grandTotal)
+
+/**************** */
+let bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
 
 calcTip = (arr) => {
-//arr for each - calculate tip.push to tips
- return arr.forEach(el => {
-    (el >= 50 && el <= 300 ? tipAmount=0.15*el : tipAmount=0.2*el)
-    //console.log(tipAmount)
-    tips.push(tipAmount)
-    totals.push(tipAmount + el)
+ return arr.forEach(element => {
+        (element >= 50 && element <= 300 ? tipAmount = element * 0.15 : tipAmount = element * 0.2);
+        tips.push(tipAmount);
+        totals.push(tipAmount + element)
+        // console.log(bills)
+        // console.log(tips)
+        // console.log(totals)
+
+    });
     //console.log(tips)
-})
-
-}
-
-calcGrandTotal = (arr) => {
-     arr.reduce((total,number) => {
-        return grandTotal = total + number 
-    },0)
 }
 
 calcTip(bills)
 
-calcGrandTotal(totals)
+document.getElementById("section1-p1").innerHTML = `bills: ${bills}`
+document.getElementById("section1-p2").innerHTML = `tips: ${tips}`
+document.getElementById("section1-p3").innerHTML = `totals ${totals}`
 
-console.log(bills)
-console.log(tips)
-console.log(totals)
-console.log(grandTotal)
-
-
-
-
+//#######################################
 reset = () => {
     document.getElementById("section1-p1").innerHTML = ``;
 
