@@ -200,6 +200,10 @@
 // console.log(grandTotal)
 
 /**************** */
+loadData = ()=> {
+
+
+
 let bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let tips = [];
 let totals = [];
@@ -219,12 +223,15 @@ calcTip = (arr) => {
 
 calcTip(bills)
 
+document.getElementsByTagName("BODY")[0].style.backgroundColor="green"
+
 document.getElementById("section1-p1").innerHTML = `bills: ${bills}`
 document.getElementById("section1-p2").innerHTML = `tips: ${tips}`
 document.getElementById("section1-p3").innerHTML = `totals ${totals}`
-
+}
 //#######################################
 reset = () => {
+    document.getElementsByTagName("BODY")[0].style.backgroundColor="antiquewhite"
     document.getElementById("section1-p1").innerHTML = ``;
 
     document.getElementById("section1-p2").innerHTML = ``
