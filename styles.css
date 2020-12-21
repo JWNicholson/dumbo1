@@ -27,9 +27,9 @@ section {
     align-items: center;
 }
 
-#section1 {
+/* #section1,#section2 {
     display: none;
-}
+} */
 
 section p {
     /* background-color: aliceblue; */

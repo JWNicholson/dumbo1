@@ -1,4 +1,1 @@
-canary = () => {
-    alert("FUNYINZ")
-}
 
