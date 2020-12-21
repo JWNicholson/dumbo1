@@ -1,0 +1,4 @@
+canary = () => {
+    alert("FUNYINZ")
+}
+

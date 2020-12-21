@@ -200,9 +200,12 @@
 // console.log(grandTotal)
 
 /**************** */
+showBlock = () =>{
+    document.getElementById("section1").style.display = "block"
+}
 loadData = ()=> {
 
-
+showBlock();
 
 let bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let tips = [];
@@ -238,5 +241,8 @@ reset = () => {
    
     document.getElementById("section1-p3").innerHTML = ``
    
-    document.getElementById("section1-p4").innerHTML = ``
+    document.getElementById("section1-p4").innerHTML = ``   
 }
+
+
+//##############################
