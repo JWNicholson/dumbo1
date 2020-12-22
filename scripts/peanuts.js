@@ -235,21 +235,20 @@ document.getElementById("section1-p3").innerHTML = `totals ${totals}`
 //#######################################
 reset = () => {
     document.getElementsByTagName("BODY")[0].style.backgroundColor="antiquewhite"
-    // document.getElementById("section1-p1").innerHTML = ``;
+    document.getElementById("section1-p1").innerHTML = ``
 
-    // document.getElementById("section1-p2").innerHTML = ``
+    document.getElementById("section1-p2").innerHTML = ``
    
-    // document.getElementById("section1-p3").innerHTML = ``
+    document.getElementById("section1-p3").innerHTML = ``
    
-   // document.getElementById("section1-p4").innerHTML = ``   
+   document.getElementById("section1-p4").innerHTML = `` 
+
+   document.getElementById("section2-p1").innerHTML = ``
    
 }
 
 
 //##############################
-leetData = () => {
-    document.getElementsByTagName("BODY")[0].style.backgroundColor="purple"
-    document.getElementById("section2-p1").innerHTML=`chickentruck`
 
 
-}
+

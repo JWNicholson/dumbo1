@@ -32,7 +32,7 @@ section {
 } */
 
 section p {
-    /* background-color: aliceblue; */
+  color:aliceblue;
     width:40%;
     margin:0.5rem auto;
     padding: 0.5rem;
